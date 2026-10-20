@@ -1,0 +1,6 @@
+a) The triangle in counter clockwise order would be topleft, top right, bot right for triangle1, and for trinagle2
+it would be botright, topleft, and bot right. 
+
+b) so for the verticy one without indexing we would need to store 3 (points)*2 (x,y floats)*4(bytes)*x(amount of triangles with a minimum of 2)
+for the verticy with indexing (assuming we have 2 at least 2 triangels) we have 4(points)*2 (x,y floats)*4(bytes) + 3 indicies *x(amount of triangles with a minimum of 2).
+So overall we will save space if we have more than 3 combined rectangle being made. 
