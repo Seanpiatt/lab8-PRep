@@ -27,6 +27,8 @@ public:
     const sf::Vector2f& scale() const { return mTransform.scale; }
     sf::Vector2f& origin() { return mOrigin; }
     const sf::Vector2f& origin() const { return mOrigin; }
+    const sf::Vector2f applyPoint2(const sf::Vector2f& p) { return mTransform.applyPoint(p);}
+    const sf::Vector2f applyVector2(const sf::Vector2f& p) { return mTransform.applyVector(p);}
 
 private:
     // It may help you to write this, which is an array of 6 vertices:

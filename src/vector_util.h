@@ -13,6 +13,8 @@ constexpr sf::Vector2<T> operator*(const sf::Vector2<T>& a, const sf::Vector2<T>
     return sf::Vector2<T>(a.x * b.x, a.y * b.y);
 }
 
+
+
 // element-wise division
 template <typename T>
 constexpr sf::Vector2<T> operator/(const sf::Vector2<T>& a, const sf::Vector2<T>& b) {
